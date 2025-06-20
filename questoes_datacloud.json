@@ -340,7 +340,8 @@
       "D": "Check if correct permissions are configured for the S3 user."
     },
     "correct_answers": [
-      "A C"
+      "A", 
+      "C"
     ]
   },
   {
