@@ -1,0 +1,2236 @@
+[
+  {
+    "id": 1,
+    "question": "Northern Trail Outfitters (NTD) creates a calculated insight to compute recency, frequency,\nmonetary {RFM) scores on its unified individuals. NTO then creates a segment based on these scores\nthat it activates to a Marketing Cloud activation target.\nWhich two actions are required when configuring the activation?\nChoose 2 answers",
+    "options": {
+      "D": "Add the calculated insight in the activation.",
+      "A": "Add additional attributes.",
+      "B": "Choose a segment.",
+      "C": "Select contact points."
+    },
+    "correct_answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "A customer is concerned that the consolidation rate displayed in the identity resolution is\nquite low compared to their initial estimations.\nWhich configuration change should a consultant consider in order to increase the consolidation rate?",
+    "options": {
+      "A": "Change reconciliation rules to Most Occurring.",
+      "B": "Increase the number of matching rules.",
+      "C": "Include additional attributes in the existing matching rules.",
+      "D": "Reduce the number of matching rules."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "A customer is trying to activate data from Data Cloud to an Amazon S3 Cloud File Storage\nBucket.\nWhich authentication type should the consultant recommend to connect to the S3 bucket from Data\nCloud?",
+    "options": {
+      "A": "Use an S3 Private Key Certificate.",
+      "B": "Use an S3 Encrypted Username and Password.",
+      "C": "Use a JWT Token generated on S3.",
+      "D": "Use an S3 Access Key and Secret Key."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "A consultant has an activation that is set to publish every 12 hours, but has discovered that\nupdates to the data prior to activation are delayed by up to 24 hours.\nWhich two areas should a consultant review to troubleshoot this issue?\nChoose 2 answers",
+    "options": {
+      "A": "Review data transformations to ensure they're run after calculated insights.",
+      "B": "Review calculated insights to make sure they're run before segments are refreshed.",
+      "C": "Review segments to ensure they're refreshed after the data is ingested.",
+      "D": "Review calculated insights to make sure they're run after the segments are refreshed."
+    },
+    "correct_answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Northern Trail Outfitters wants to use some of its Marketing Cloud data in Data Cloud.\nWhich engagement channel data will require custom integration?",
+    "options": {
+      "A": "SMS",
+      "B": "Email",
+      "C": "CloudPage",
+      "D": "Mobile push"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Which permission setting should a consultant check if the custom Salesforce CRM object is\nnot available in New Data Stream configuration?",
+    "options": {
+      "A": "Confirm the Create object permission is enabled in the Data Cloud org.",
+      "B": "Confirm the View All object permission is enabled in the source Salesforce CRM org.",
+      "C": "Confirm the Ingest Object permission is enabled in the Salesforce CRM org.",
+      "D": "Confirm that the Modify Object permission is enabled in the Data Cloud org."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Which two common use cases can be addressed with Data Cloud?\nChoose 2 answers",
+    "options": {
+      "A": "Understand and act upon customer data to drive more relevant experiences.",
+      "B": "Govern enterprise data lifecycle through a centralized set of policies and processes.",
+      "C": "Harmonize data from multiple sources with a standardized and extendable data model.",
+      "D": "Safeguard critical business data by serving as a centralized system for backup and disaster recovery."
+    },
+    "correct_answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Where is value suggestion for attributes in segmentation enabled when creating the DMO?",
+    "options": {
+      "A": "Data Mapping",
+      "B": "Data Transformation",
+      "C": "Segment Setup",
+      "D": "Data Stream Setup"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "A Data Cloud customer wants to adjust their identity resolution rules to increase their\naccuracy of matches. Rather than matching on email address, they want to review a rule that joins\ntheir CRM Contacts with their Marketing Contacts, where both use the CRM ID as their primary key.\nWhich two steps should the consultant take to address this new use case?\nChoose 2 answers",
+    "options": {
+      "A": "Map the primary key from the two systems to Party Identification, using CRM ID as the identification name for both.",
+      "B": "Map the primary key from the two systems to party identification, using CRM ID as the identification name for individuals coming from the CRM, and Marketing ID as the identification name for individuals coming from the marketing platform.",
+      "C": "Create a custom matching rule for an exact match on the Individual ID attribute.",
+      "D": "Create a matching rule based on party identification that matches on CRM ID as the party identification name."
+    },
+    "correct_answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Which consideration related to the way Data Cloud ingests CRM data is true?",
+    "options": {
+      "A": "CRM data cannot be manually refreshed and must wait for the next scheduled synchronization,",
+      "B": "The CRM Connector's synchronization times can be customized to up to 15-minute intervals.",
+      "C": "Formula fields are refreshed at regular sync intervals and are updated at the next full refresh.",
+      "D": "The CRM Connector allows standard fields to stream into Data Cloud in real time."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What does the Source Sequence reconciliation rule do in identity resolution?",
+    "options": {
+      "A": "Includes data from sources where the data is most frequently occurring",
+      "B": "Identifies which individual records should be merged into a unified profile by setting a priority for specific data sources",
+      "C": "Identifies which data sources should be used in the process of reconcillation by prioritizing the most recently updated data source",
+      "D": "Sets the priority of specific data sources when building attributes in a unified profile, such as a first or last name"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Which two dependencies prevent a data stream from being deleted?\nChoose 2 answers",
+    "options": {
+      "A": "The underlying data lake object is used in activation.",
+      "B": "The underlying data lake object is used in a data transform.",
+      "C": "The underlying data lake object is mapped to a data model object.",
+      "D": "The underlying data lake object is used in segmentation."
+    },
+    "correct_answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "What should a user do to pause a segment activation with the intent of using that segment\nagain?",
+    "options": {
+      "A": "Deactivate the segment.",
+      "B": "Delete the segment.",
+      "C": "Skip the activation.",
+      "D": "Stop the publish schedule."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 14,
+    "question": "When creating a segment on an individual, what is the result of using two separate\ncontainers linked by an AND as shown below?\nGoodsProduct | Count | At Least | 1\nColor | Is Equal To | red\nAND\nGoodsProduct | Count | At Least | 1\nPrimaryProductCategory | Is Equal To | shoes",
+    "options": {
+      "A": "Individuals who purchased at least one of any red’ product and also purchased at least one pair of ‘shoes’",
+      "B": "Individuals who purchased at least one 'red shoes' as a single line item in a purchase",
+      "C": "Individuals who made a purchase of at least one 'red shoes’ and nothing else",
+      "D": "Individuals who purchased at least one of any 'red' product or purchased at least one pair of 'shoes'"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 15,
+    "question": "What should an organization use to stream inventory levels from an inventory management\nsystem into Data Cloud in a fast and scalable, near-real-time way?",
+    "options": {
+      "A": "Cloud Storage Connector",
+      "B": "Commerce Cloud Connector",
+      "C": "Ingestion API",
+      "D": "Marketing Cloud Personalization Connector"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Northern Trail Outfitters (NTO), an outdoor lifestyle clothing brand, recently started a new\nline of business. The new business specializes in gourmet camping food. For business reasons as well\nas security reasons, it's important to NTO to keep all Data Cloud data separated by brand.\nWhich capability best supports NTO's desire to separate its data by brand?",
+    "options": {
+      "A": "Data streams for each brand",
+      "B": "Data model objects for each brand",
+      "C": "Data spaces for each brand",
+      "D": "Data sources for each brand"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Cumulus Financial created a segment called High Investment Balance Customers. This is a\nfoundational segment that includes several segmentation criteria the marketing team should\nconsistently use.\nWhich feature should the consultant suggest the marketing team use to ensure this consistency\nwhen creating future, more refined segments?",
+    "options": {
+      "A": "Create new segments using nested segments.",
+      "B": "Create a High Investment Balance calculated insight.",
+      "C": "Package High Investment Balance Customers in a data kit.",
+      "D": "Create new segments by cloning High Investment Balance Customers."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Cumulus Financial uses Service Cloud as its CRM and stores mobile phone, home phone,\nand work phone as three separate fields for its customers on the Contact record. The company plans\nto use Data Cloud and ingest the Contact object via the CRM Connector.\nWhat is the most efficient approach that a consultant should take when ingesting this data to ensure\nall the different phone numbers are properly mapped and available for use in activation?",
+    "options": {
+      "A": "Ingest the Contact object and map the Work Phone, Mobile Phone, and Home Phone to the Contact Point Phone data map object from the Contact data stream.",
+      "B": "Ingest the Contact object and use streaming transforms to normalize the phone numbers from the Contact data stream into a separate Phone data lake object (DLO) that contains three rows, and then map this new DLO to the Contact Point Phone data map object.",
+      "C": "Ingest the Contact object and then create a calculated insight to normalize the phone numbers, and then map to the Contact Point Phone data map object.",
+      "D": "Ingest the Contact object and create formula fields in the Contact data stream on the phone numbers, and then map to the Contact Point Phone data map object."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 19,
+    "question": "A customer has a Master Customer table from their CRM to ingest into Data Cloud. The\ntable contains a name and primary email address, along with other personally Identifiable\ninformation (Pll).\nHow should the fields be mapped to support identity resolution?",
+    "options": {
+      "A": "Create a new custom object with fields that directly match the incoming table.",
+      "B": "Map all fields to the Customer object.",
+      "C": "Map name to the Individual object and email address to the Contact Phone Email object.",
+      "D": "Map all fields to the Individual object, adding a custom field for the email address."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 20,
+    "question": "Cloud Kicks received a Request to be Forgotten by a customer.\nIn which two ways should a consultant use Data Cloud to honor this request?\nChoose 2 answers",
+    "options": {
+      "A": "Delete the data from the incoming data stream and perform a full refresh.",
+      "B": "Add the Individual ID to a headerless file and use the delete from file functionality.",
+      "C": "Use Data Explorer to locate and manually remove the Individual.",
+      "D": "Use the Consent API to suppress processing and delete the Individual and related records from source data streams."
+    },
+    "correct_answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Cumulus Financial uses Data Cloud to segment banking customers and activate them for\ndirect mail via a Cloud File Storage activation. The company also wants to analyze individuals who\nhave been in the segment within the last 2 years.\nWhich Data Cloud component allows for this?",
+    "options": {
+      "A": "Segment exclusion",
+      "B": "Nested segments",
+      "C": "Segment membership data model object",
+      "D": "Calculated insights"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 22,
+    "question": "What is Data Cloud's primary value to customers?",
+    "options": {
+      "A": "To provide a unified view of a customer and their related data",
+      "B": "To connect all systems with a golden record",
+      "C": "To create a single source of truth for all anonymous data",
+      "D": "To create personalized campaigns by listening, understanding, and acting on customer behavior"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 23,
+    "question": "During an implementation project, a consultant completed ingestion of all data streams for\ntheir customer.\nPrior to segmenting and acting on that data, which additional configuration is required?",
+    "options": {
+      "A": "Data Activation",
+      "B": "Calculated Insights",
+      "C": "Data Mapping",
+      "D": "Identity Resolution"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Northern Trail Outfitters (NTO) wants to connect their B2C Commerce data with Data Cloud\nand bring two years of transactional history into Data Cloud.\nWhat should NTO use to achieve this?",
+    "options": {
+      "A": "B2C Commerce Starter Bundles",
+      "B": "Direct Sales Order entity ingestion",
+      "C": "Direct Sales Product entity ingestion",
+      "D": "B2C Commerce Starter Bundles plus a custom extract"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 25,
+    "question": "A customer has a requirement to receive a notification whenever an activation fails for a\nparticular segment.\nWhich feature should the consultant use to solution for this use case?",
+    "options": {
+      "A": "Flow",
+      "B": "Report",
+      "C": "Activation alert",
+      "D": "Dashboard"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Which two steps should a consultant take if a successfully configured Amazon S3 data\nstream fails to refresh with a \"NO FILE FOUND\" error message?\nChoose 2 answers",
+    "options": {
+      "A": "Check if correct permissions are configured for the Data Cloud user.",
+      "B": "Check if the Amazon S3 data source is enabled in Data Cloud Setup.",
+      "C": "Check If the file exists in the specified bucket location.",
+      "D": "Check if correct permissions are configured for the S3 user."
+    },
+    "correct_answers": [
+      "A C"
+    ]
+  },
+  {
+    "id": 27,
+    "question": "A consultant is discussing the benefits of Data Cloud with a customer that has multiple\ndisjointed data sources.\nWhich two functional areas should the consultant highlight in relation to managing customer data?\nChoose 2 answers",
+    "options": {
+      "A": "Data Harmonization",
+      "B": "Unified Profiles",
+      "C": "Master Data Management",
+      "D": "Data Marketplace"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 28,
+    "question": "A retailer wants to unify profiles using Loyalty ID which is different than the unique ID of\ntheir customers.\nWhich object should the consultant use in identity resolution to perform exact match rules on the\nLoyalty ID?",
+    "options": {
+      "A": "Party Identification object",
+      "B": "Loyalty Identification object",
+      "C": "Individual object",
+      "D": "Contact Identification object"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Which data model subject area defines the revenue or quantity for an opportunity by\nproduct family?",
+    "options": {
+      "A": "Engagement",
+      "B": "Product",
+      "C": "Party",
+      "D": "Sales Order"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Which configuration supports separate Amazon S3 buckets for data ingestion and activation?",
+    "options": {
+      "A": "Dedicated S3 data sources in Data Cloud setup",
+      "B": "Multiple S3 connectors in Data Cloud setup",
+      "C": "Dedicated S3 data sources in activation setup",
+      "D": "Separate user credentials for data stream and activation target"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 31,
+    "question": "A customer wants to use the transactional data from their data warehouse in Data Cloud.\nThey are only able to export the data via an SFTP site.\nHow should the file be brought into Data Cloud?",
+    "options": {
+      "A": "Ingest the file with the SFTP Connector.",
+      "B": "Ingest the file through the Cloud Storage Connector.",
+      "C": "Manually import the file using the Data Import Wizard.",
+      "D": "Use Salesforce's Dataloader application to perform a bulk upload from a desktop."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 32,
+    "question": "When performing segmentation or activation, which time zone is used to publish and refresh data?",
+    "options": {
+      "A": "Time zone specified on the activity at the time of creation",
+      "B": "Time zone of the user creating the activity",
+      "C": "Time zone of the Data Cloud Admin user",
+      "D": "Time zone set by the Salesforce Data Cloud org"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Cumulus Financial is currently using Data Cloud and ingesting transactional data from its\nbackend system via an S3 Connector in upsert mode. During the initial setup six months ago, the\ncompany created a formula field in Data Cloud to create a custom classification. It now needs to\nupdate this formula to account for more classifications.\nWhat should the consultant keep in mind with regard to formula field updates when using the S3\nConnector?",
+    "options": {
+      "A": "Data Cloud will initiate a full refresh of data from $3 and will update the formula on all records.",
+      "B": "Data Cloud will only update the formula on a go-forward basis for new records.",
+      "C": "Data Cloud does not support formula field updates for data streams of type upsert.",
+      "D": "Data Cloud will update the formula for all records at the next incremental upsert refresh."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Luxury Retailers created a segment targeting high value customers that it activates through\nMarketing Cloud for email communication. The company notices that the activated count is smaller\nthan the segment count.\nWhat is a reason for this?",
+    "options": {
+      "A": "Marketing Cloud activations apply a frequency cap and limit the number of records that can be sent in an activation.",
+      "B": "Data Cloud enforces the presence of Contact Point for Marketing Cloud activations. If the individual does not have a related Contact Point, it will not be activated.",
+      "C": "Marketing Cloud activations automatically suppress individuals who are unengaged and have not opened or clicked on an email in the last six months.",
+      "D": "Marketing Cloud activations only activate those individuals that already exist in Marketing Cloud. They do not allow activation of new records."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Northern Trail Outfitters wants to implement Data Cloud and has several use cases in mind.\nWhich two use cases are considered a good fit for Data Cloud?\nChoose 2 answers",
+    "options": {
+      "A": "To ingest and unify data from various sources to reconcile customer identity",
+      "B": "To create and orchestrate cross-channel marketing messages",
+      "C": "To use harmonized data to more accurately understand the customer and business impact",
+      "D": "To eliminate the need for separate business intelligence and IT data management tools"
+    },
+    "correct_answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "What does it mean to build a trust-based, first-party data asset?",
+    "options": {
+      "A": "To provide transparency and security for data gathered from individuals who provide consent for its use and receive value in exchange",
+      "B": "To provide trusted, first-party data in the Data Cloud Marketplace that follows all compliance regulations",
+      "C": "To ensure opt-in consents are collected for all email marketing as required by law",
+      "D": "To obtain competitive data from reliable sources through interviews, surveys, and polls"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "What is the result of a segmentation criteria filtering on City | Is Equal To | 'San José'?",
+    "options": {
+      "A": "Cities containing 'San José’, 'San Jose’, 'san jose’, or 'san jose’",
+      "B": "Cities only containing 'San Jose' or 'san jose’",
+      "C": "Cities only containing 'San Jose' or 'San Jose'",
+      "D": "Cities only containing 'San José’ or 'san josé'"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 38,
+    "question": "During a privacy law discussion with a customer, the customer indicates they need to honor\nrequests for the right to be forgotten. The consultant determines that Consent API will solve this\nbusiness need.\nWhich two considerations should the consultant inform the customer about?\nChoose 2 answers",
+    "options": {
+      "A": "Data deletion requests are reprocessed at 30, 60, and 90 days.",
+      "B": "Data deletion requests are processed within 1 hour.",
+      "C": "Data deletion requests are submitted for Individual profiles.",
+      "D": "Data deletion requests submitted to Data Cloud are passed to all connected Salesforce clouds."
+    },
+    "correct_answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 39,
+    "question": "To import campaign members into a campaign in Salesforce CRM, a user wants to export\nthe segment to Amazon S3. The resulting file needs to include the Salesforce CRM Campaign ID in\nthe name.\nWhat are two ways to achieve this outcome?\nChoose 2 answers",
+    "options": {
+      "A": "Include campaign identifier in the activation name.",
+      "B": "Hard code the campaign identifier as a new attribute in the campaign activation.",
+      "C": "Include campaign identifier in the filename specification.",
+      "D": "Include campaign identifier in the segment name."
+    },
+    "correct_answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "How can a consultant modify attribute names to match a naming convention in Cloud File\nStorage targets?",
+    "options": {
+      "A": "Use a formula field to update the field name in an activation.",
+      "B": "Update attribute names in the data stream configuration.",
+      "C": "Set preferred attribute names when configuring activation.",
+      "D": "Update field names in the data model object."
+    },
+    "correct_answers": []
+  },
+  {
+    "id": 41,
+    "question": "Northern Trail Qutfitters wants to be able to calculate each customer's lifetime value {LTV)\nbut also create breakdowns of the revenue sourced by website, mobile app, and retail channels.\nWhat should a consultant use to address this use case in Data Cloud?",
+    "options": {
+      "A": "Flow Orchestration",
+      "B": "Nested segments",
+      "C": "Metrics on metrics",
+      "D": "Streaming data transform"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 42,
+    "question": "A consultant wants to ensure that every segment managed by multiple brand teams\nadheres to the same set of exclusion criteria, that are updated on a monthly basis.\nWhat is the most efficient option to allow for this capability?",
+    "options": {
+      "A": "Create, publish, and deploy a data kit.",
+      "B": "Create a reusable container block with common criteria.",
+      "C": "Create a nested segment.",
+      "D": "Create a segment and copy it for each brand."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "A customer needs to integrate in real time with Salesforce CRM.\nWhich feature accomplishes this requirement?",
+    "options": {
+      "A": "Streaming transforms",
+      "B": "Data model triggers",
+      "C": "Sales and Service bundle",
+      "D": "Data actions and Lightning web components"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "A user wants to be able to create a multi-dimensional metric to identify unified individual\nlifetime value (LTV).\nWhich sequence of data model object (DMO) joins is necessary within the calculated Insight to\nenable this calculation?",
+    "options": {
+      "A": "Unified Individual > Unified Link Individual > Sales Order",
+      "B": "Unified Individual > Individual > Sales Order",
+      "C": "Sales Order > Individual > Unified Individual",
+      "D": "Sales Order > Unified Individual"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "Cumulus Financial created a segment called Multiple Investments that contains individuals\nwho have invested in two or more mutual funds.\nThe company plans to send an email to this segment regarding a new mutual fund offering, and\nwants to personalize the email content with information about each customer's current mutual fund\ninvestments.\nHow should the Data Cloud consultant configure this activation?",
+    "options": {
+      "A": "Include Fund Type equal to \"Mutual Fund\" as a related attribute. Configure an activation based on the new segment with no additional attributes.",
+      "B": "Choose the Multiple Investments segment, choose the Email contact point, add related attribute Fund Name, and add related attribute filter for Fund Type equal to \"Mutual Fund\".",
+      "C": "Choose the Multiple Investments segment, choose the Email contact point, and add related attribute Fund Type.",
+      "D": "Include Fund Name and Fund Type by default for post processing in the target system."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 46,
+    "question": "A consultant is integrating an Amazon 53 activated campaign with the customer's destination system.\nIn order for the destination system to find the metadata about the segment, which file on the 53 will\ncontain this information for processing?",
+    "options": {
+      "A": "The .txt file",
+      "B": "The json file",
+      "C": "The .csv file",
+      "D": "The .zip file"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 47,
+    "question": "A customer notices that their consolidation rate has recently increased. They contact the\nconsultant to ask why.\nWhat are two likely explanations for the increase?\nChoose 2 answers",
+    "options": {
+      "A": "New data sources have been added to Data Cloud that largely overlap with the existing profiles.",
+      "B": "Duplicates have been removed from source system data streams.",
+      "C": "Identity resolution rules have been removed to reduce the number of matched profiles.",
+      "D": "Identity resolution rules have been added to the ruleset to increase the number of matched profiles."
+    },
+    "correct_answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "A client wants to bring in loyalty data from a custom object in Salesforce CRM that contains\na point balance for accrued hotel points and airline points within the same record. The client wants\nto split these point systems into two separate records for better tracking and processing.\nWhat should a consultant recommend in this scenario?",
+    "options": {
+      "A": "Clone the data source object.",
+      "B": "Use batch transforms to create a second data lake object.",
+      "C": "Create a junction object in Salesforce CRM and modify the ingestion strategy.",
+      "D": "Create a data kit from the data lake object and deploy it to the same Data Cloud org."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "A segment fails to refresh with the error \"Segment references too many data lake objects\n(DLOS)\".\nWhich two troubleshooting tips should help remedy this issue?\nChoose 2 answers",
+    "options": {
+      "A": "Split the segment into smaller segments.",
+      "B": "Use calculated insights in order to reduce the complexity of the segmentation query.",
+      "C": "Refine segmentation criteria to limit up to five custom data model objects (DMOs).",
+      "D": "Space out the segment schedules to reduce DLO load."
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 50,
+    "question": "An organization wants to enable users with the ability to identify and select text attributes\nfrom a picklist of options.\nWhich Data Cloud feature should help with this use case?",
+    "options": {
+      "A": "Value suggestion",
+      "B": "Data harmonization",
+      "C": "Transformation formulas",
+      "D": "Global picklists"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 51,
+    "question": "A consultant is working in a customer's Data Cloud org and is asked to delete the existing\nidentity resolution ruleset.\nWhich two impacts should the consultant communicate as a result of this action?\nChoose 2 answers",
+    "options": {
+      "A": "All individual data will be removed.",
+      "B": "Unified customer data associated with this ruleset will be removed.",
+      "C": "Dependencies on data model objects will be removed.",
+      "D": "All source profile data will be removed"
+    },
+    "correct_answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 52,
+    "question": "Northern Trail Outfitters uploads new customer data to an Amazon S3 Bucket on a daily\nbasis to be ingested in Data Cloud.\nIn what order should each process be run to ensure that freshly imported data is ready and available\nto use for any segment?",
+    "options": {
+      "A": "Calculated Insight > Refresh Data Stream > Identity Resolution",
+      "B": "Refresh Data Stream > Calculated Insight > Identity Resolution",
+      "C": "Identity Resolution > Refresh Data Stream > Calculated Insight",
+      "D": "Refresh Data Stream > Identity Resolution > Calculated Insight"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 53,
+    "question": "Data Cloud receives a nightly file of all ecommerce transactions from the previous day.\nSeveral segments and activations depend upon calculated insights from the updated data in order to\nmaintain accuracy in the customer's scheduled campaign messages.\nWhat should the consultant do to ensure the ecommerce data is ready for use for each of the\nscheduled activations?",
+    "options": {
+      "A": "Use Flow to trigger a change data event on the ecommerce data to refresh calculated insights and segments before the activations are scheduled to run.",
+      "B": "Set a refresh schedule for the calculated insights to occur every hour.",
+      "C": "Ensure the activations are set to Incremental Activation and automatically publish every hour.",
+      "D": "Ensure the segments are set to Rapid Publish and set to refresh every hour."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Which two requirements must be met for a calculated insight to appear in the\nsegmentation canvas?\nChoose 2 answers",
+    "options": {
+      "A": "The metrics of the calculated insights must only contain numeric values.",
+      "B": "The primary key of the segmented table must be a metric in the calculated insight.",
+      "C": "The calculated insight must contain a dimension including the Individual or Unified Individual Id.",
+      "D": "The primary key of the segmented table must be a dimension in the calculated insight."
+    },
+    "correct_answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "A customer requests that their personal data be deleted.\nWhich action should the consultant take to accommodate this request in Data Cloud?",
+    "options": {
+      "A": "Use a streaming API call to delete the customer's information.",
+      "B": "Use Profile Explorer to delete the customer data from Data Cloud.",
+      "C": "Use Consent API to request deletion of the customer's information.",
+      "D": "Use the Data Rights Subject Request tool to request deletion of the customer's information."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 56,
+    "question": "What does the Ignore Empty Value option do in identity resolution?",
+    "options": {
+      "A": "Ignores empty fields when running any custom match rules",
+      "B": "Ignores empty fields when running reconciliation rules",
+      "C": "Ignores Individual object records with empty fields when running identity resolution rules",
+      "D": "Ignores empty fields when running the standard match rules"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Northern Trail Outfitters (NTO) is configuring an identity resolution ruleset based on Fuzzy\nName and Normalized Email.\nWhat should NTO do to ensure the best email address is activated?",
+    "options": {
+      "A": "Include Contact Point Email object Is Active field as a match rule.",
+      "B": "Use the source priority order in activations to make sure a contact point from the desired source is delivered to the activation target.",
+      "C": "Ensure Marketing Cloud is prioritized as the first data source in the Source Priority reconciliation rule.",
+      "D": "Set the default reconciliation rule to Last Updated."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 58,
+    "question": "A customer wants to create segments of users based on their Customer Lifetime Value.\nHowever, the source data that will be brought into Data Cloud does not include that key performance\nindicator (KPI).\nWhich sequence of steps should the consultant follow to achieve this requirement?",
+    "options": {
+      "A": "Ingest Data > Map Data to Data Model > Create Calculated Insight > Use in Segmentation",
+      "B": "Create Calculated Insight > Map Data to Data Model> Ingest Data > Use in Segmentation",
+      "C": "Create Calculated Insight > Ingest Data > Map Data to Data Model> Use in Segmentation",
+      "D": "Ingest Data > Create Calculated Insight > Map Data to Data Model > Use in Segmentation"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "During discovery, which feature should a consultant highlight for a customer who has\nmultiple data sources and needs to match and reconcile data about individuals into a single unified\nprofile?",
+    "options": {
+      "A": "Data Cleansing",
+      "B": "Harmonization",
+      "C": "Data Consolidation",
+      "D": "Identity Resolution"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Northern Trail Outfitters (NTO) wants to send a promotional campaign for customers that\nhave purchased within the past 6 months. The consultant created a segment to meet this\nrequirement.\nNow, NTO brings an additional requirement to suppress customers who have made purchases within\nthe last week.\nWhat should the consultant use to remove the recent customers?",
+    "options": {
+      "A": "Batch transforms",
+      "B": "Segmentation exclude rules",
+      "C": "Related attributes",
+      "D": "Streaming insight"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "A new user of Data Cloud only needs to be able to review individual rows of ingested data and\nvalidate that it has been modeled\nsuccessfully to its linked data model object. The user will also need to make changes if required.\nWhat is the minimum permission set needed to accommodate this use case?",
+    "options": {
+      "A": "Data Cloud for Marketing Specialist",
+      "B": "Data Cloud Admin",
+      "C": "Data Cloud User",
+      "D": "Data Cloud for Marketing Data Aware Specialist"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 62,
+    "question": "Which data stream category should be assigned to use the data for time-based operations in\nsegmentation and calculated insights?",
+    "options": {
+      "A": "Individual",
+      "B": "Transaction",
+      "C": "Sales Order",
+      "D": "Engagement"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 63,
+    "question": "Which data model subject area should be used for any Organization, Individual, or Member in the\nCustomer 360 data model?",
+    "options": {
+      "A": "Engagement",
+      "B": "Membership",
+      "C": "Party",
+      "D": "Global Account"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 64,
+    "question": "Which method should a consultant use when performing aggregations in windows of 15 minutes on\ndata collected via the Interaction SDK or Mobile SDK?",
+    "options": {
+      "A": "Batch transform",
+      "B": "Calculated insight",
+      "C": "Streaming insight",
+      "D": "Formula fields"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 65,
+    "question": "Northern Trail Outfitters is using the Marketing Cloud Starter Data Bundles to bring Marketing Cloud\ndata into Data Cloud.\nWhat are two of the available datasets in Marketing Cloud Starter Data Bundles?\nChoose 2 answers",
+    "options": {
+      "A": "Personalization",
+      "B": "MobileConnect",
+      "C": "Loyalty Management",
+      "D": "MobilePush"
+    },
+    "correct_answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 66,
+    "question": "A customer has a custom Customer Email c object related to the standard Contact object in\nSalesforce CRM. This custom object\nstores the email address a Contact that they want to use for activation.\nTo which data entity is mapped?",
+    "options": {
+      "A": "Contact",
+      "B": "Contact Point_Email",
+      "C": "Custom customer Email__c object",
+      "D": "Individual"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 67,
+    "question": "During discovery, which feature should a consultant highlight for a customer who has multiple data\nsources and needs to match and reconcile data about individuals into a single unified profile?",
+    "options": {
+      "A": "Harmonization",
+      "B": "Data Cleansing",
+      "C": "Data Consolidation",
+      "D": "Identity Resolution"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 68,
+    "question": "Cumulus Financial uses Data Cloud to segment banking customers and activate them for direct mail\nvia a Cloud File Storage\nactivation. The company also wants to analyze individuals who have been in the segment within the\nlast 2 years.\nWhich Data Cloud component allows for this?",
+    "options": {
+      "A": "Nested segments",
+      "B": "Segment exclusion",
+      "C": "Calculated insights",
+      "D": "Segment membership data model object"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 69,
+    "question": "Every day, Northern Trail Outfitters uploads a summary of the last 24 hours of store transactions to a\nnew file in an Amazon S3\nbucket, and files older than seven days are automatically deleted. Each file contains a timestamp in a\nstandardized naming convention.\nWhich two options should a consultant configure when ingesting this data stream?\nChoose 2 answers",
+    "options": {
+      "A": "Ensure that deletion of old files is enabled.",
+      "B": "Ensure the refresh mode is set to \"Upsert\".",
+      "C": "Ensure the filename contains a wildcard to a accommodate the timestamp.",
+      "D": "Ensure the refresh mode is set to \"Full Refresh.’’"
+    },
+    "correct_answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 70,
+    "question": "Which solution provides an easy way to ingest Marketing Cloud subscriber profile attributes into Data\nCloud on a daily basis?",
+    "options": {
+      "A": "Automation Studio and Profile file API",
+      "B": "Marketing Cloud Connect API",
+      "C": "Marketing Cloud Data extension Data Stream",
+      "D": "Email Studio Starter Data Bundle"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 71,
+    "question": "A customer has a requirement to be able to view the last time each segment was published within\ntheir Data Cloud org.\nWhich two features should the consultant recommend to best address this requirement?\nChoose 2 answers",
+    "options": {
+      "A": "Profile Explorer",
+      "B": "Calculated insight",
+      "C": "Dashboard",
+      "D": "Report"
+    },
+    "correct_answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 72,
+    "question": "Which information is provided in a .csv file when activating to Amazon S3?",
+    "options": {
+      "A": "An audit log showing the user who activated the segment and when it was activated",
+      "B": "The activated data payload",
+      "C": "The metadata regarding the segment definition",
+      "D": "The manifest of origin sources within Data Cloud"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 73,
+    "question": "Which operator should a consultant use to create a segment for a birthday campaign that is\nevaluated daily?",
+    "options": {
+      "A": "Is Today",
+      "B": "Is Birthday",
+      "C": "Is Between",
+      "D": "Is Anniversary Of"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 74,
+    "question": "Luxury Retailers created a segment targeting high value customers that it activates through\nMarketing Cloud for email communication. The company notices that the activated count is smaller\nthan the segment count.\nWhat is a reason for this?",
+    "options": {
+      "A": "Data Cloud enforces the presence of Contact Point for Marketing Cloud activations. If the individual does not have a related Contact Point, it will not be activated.",
+      "B": "Marketing Cloud activations automatically suppress individuals who are unengaged and have not opened or clicked on an email in the last six months.",
+      "C": "Marketing Cloud activations only activate those individuals that already exist in Marketing Cloud. They do not allow activation of new records.",
+      "D": "Marketing Cloud activations apply a frequency cap and limit the number of records that can be sent in an activation."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 75,
+    "question": "A Data Cloud consultant recently added a new data source and mapped some of the data to a new\ncustom data model object (DMO)\nthat they want to use for creating segments. However, they cannot view the newly created DMO\nwhen trying to create a new segment.\nWhat is the cause of this issue?",
+    "options": {
+      "A": "Data has not yes been ingested into the DMO.",
+      "B": "The new DMO is not of category Profile.",
+      "C": "The new DMO does not have a relationship to the individual DMO",
+      "D": "Segmentation is only supported for the Individual and Unified Individual DMOs."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 76,
+    "question": "Cumulus Financial wants to segregate Salesforce CRM Account data based on Country for its Data\nCloud users.\nWhat should the consultant do to accomplish this?",
+    "options": {
+      "A": "Use streaming transforms to filter out Account data based on Country and map to separate data model objects accordingly.",
+      "B": "Use the data spaces feature and applying filtering on the Account data lake object based on Country.",
+      "C": "Use Salesforce sharing rules on the Account object to filter and segregate records based on Country.",
+      "D": "Use formula fields based on the account Country field to filter incoming records."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 77,
+    "question": "How does Data Cloud handle an individual's Right to be Forgotten?",
+    "options": {
+      "A": "Deletes the records from all data source objects, and any downstream data model objects are updated at the next scheduled ingestion",
+      "B": "Deletes the specified Individual record and its Unified Individual Link record.",
+      "C": "Deletes the specified Individual and records from any data source object mapped to the Individual data model object.",
+      "D": "Deletes the specified Individual and records from any data model object/data lake object related to the Individual."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 78,
+    "question": "A healthcare client wants to make use of identity resolution, but does not want to risk unifying\nprofiles that may share certain\npersonally identifying information (PII).\nWhich matching rule criteria should a consultant recommend for the most accurate matching\nresults?",
+    "options": {
+      "A": "Party Identification on Patient ID",
+      "B": "Exact Last Name and Emil",
+      "C": "Email Address and Phone",
+      "D": "Fuzzy First Name, Exact Last Name, and Email"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 79,
+    "question": "A user is not seeing suggested values from newly-modeled data when building a segment.\nWhat is causing this issue?",
+    "options": {
+      "A": "Value suggestion is still processing and to be available.",
+      "B": "Value suggestion requires Data Aware Specialist permissions at a minimum.",
+      "C": "Value suggestion can only work on direct attributes and not related attributes.",
+      "D": "Value suggestion will only return result for the first 50 values of a specific attribute."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 80,
+    "question": "A consultant is building a segment to announce a new product launch for customers that have\npreviously purchased black pants.\nHow should the consultant place attributes for product color and product type from the Order\nProduct object to meet this criteria?",
+    "options": {
+      "A": "Place the attribute for product color in one container and the attribute for product type in another container.",
+      "B": "Place an attribute for the \"black\" calculated insight to dynamically apply",
+      "C": "Place the attributes for product and product type as direct attributes.",
+      "D": "Place the attributes for product color and product type in a single container."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 81,
+    "question": "Cumulus Financial wants to be able to track the daily transaction volume of each of its customers in\nreal time and send out a notification as soon as it detects volume outside a customer's normal range.\nWhat should a consultant do to accommodate this request?",
+    "options": {
+      "A": "Use a calculated insight paired with a flow.",
+      "B": "Use streaming data transform with a flow.",
+      "C": "Use a streaming insight paired with a data action",
+      "D": "Use streaming data transform combined with a data action."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 82,
+    "question": "Cumulus Financial uses calculated insights to compute the total banking value per branch for its high\nnet worth customers. In the\ncalculated insight, \"banking value\" is a metric, \"branch\" is a dimension, and \"high net worth\" is a\nfilter.\nWhat can be included as an attribute in activation?",
+    "options": {
+      "A": "\"high net worth\" (filter)",
+      "B": "\"branch\" (dimension) and \"banking metric)",
+      "C": "\"banking value\" (metric)",
+      "D": "\"branch\" (dimension)"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 83,
+    "question": "Cloud Kicks wants to be able to build a segment of customers who have visited its website within the\nprevious 7 days.\nWhich filter operator on the Engagement Date field fits this use case?",
+    "options": {
+      "A": "Is Between",
+      "B": "Greater than Last Number of",
+      "C": "Next Number of Days",
+      "D": "Last Number of Days"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 84,
+    "question": "The Salesforce CRM Connector is configured and the Case object data stream is set up. Subsequently,\na new custom field named Business Priority is created on the Case object in Salesforce CRM.\nHowever, the new field is not available when trying to add it to the data stream.\nWhich statement addresses the cause of this issue?",
+    "options": {
+      "A": "The Salesforce Integration User Is missing Rad permissions on the newly created field.",
+      "B": "The Salesforce Data Loader application should be used to perform a bulk upload from a desktop.",
+      "C": "Custom fields on the Case object are not supported for ingesting into Data Cloud.",
+      "D": "After 24 hours when the data stream refreshes it will automatically include any new fields that were added to the Salesforce CRM."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 85,
+    "question": "Northern Trail Outfitters unifies individuals in its Data Cloud instance.\nWhich three features ca e consultant use to validate the data on a unified profile?\nChoose 3 answers",
+    "options": {
+      "A": "Identity Resolution",
+      "B": "Query APL",
+      "C": "Data Explorer",
+      "D": "Profile Explorer E. Data Actions"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 86,
+    "question": "A Data Cloud consultant recently discovered that their identity resolution process is matching\nindividuals that share email addresses or phone numbers, but are not actually the same individual.\nWhat should the consultant do to address this issue?",
+    "options": {
+      "A": "Modify the existing ruleset with stricter matching criteria, run the ruleset and review the updated results, then adjust as needed until the individuals are matching correctly.",
+      "B": "Create and run a new rules fewer matching rules, compare the two rulesets to review and verify the results, and then migrate to the new ruleset once approved.",
+      "C": "Create and run a new ruleset with stricter matching criteria, compare the two rulesets to review and verify the results, and then migrate to the new ruleset once approved.",
+      "D": "Modify the existing ruleset with stricter matching criteria, compare the two rulesets to review and verify the results, and then migrate to the new ruleset once approved."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 87,
+    "question": "A retail customer wants to bring customer data from different sources\nand wants to take advantage of identity resolution so that it can be\nused in segmentation.\nOn which entity should this be segmented for activation membership?",
+    "options": {
+      "A": "Subscriber",
+      "B": "Unified Individual",
+      "C": "Unified Contact",
+      "D": "Individual"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 88,
+    "question": "A consultant is reviewing a recent activation using engagement-based related attributes but is not\nseeing any related attributes in their payload for the majority of their segment members.\nWhich two areas should the consultant review to help troubleshoot this issue?\nChoose 2 answers",
+    "options": {
+      "A": "The related engagement events occurred within the last 90 days.",
+      "B": "The activations are referencing segments that segment on profile data rather than engagement data.",
+      "C": "The correct path is selected for the related attributes.",
+      "D": "The activated profiles have a Unified Contact Point."
+    },
+    "correct_answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 89,
+    "question": "How does identity resolution select attributes for unified individuals when there Is conflicting\ninformation in the data model?",
+    "options": {
+      "A": "Creates additional contact points",
+      "B": "Leverages reconciliation rules",
+      "C": "Creates additional rulesets",
+      "D": "Leverages match rules"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 90,
+    "question": "A consultant is setting up a data stream with transactional data,\nWhich field type should the consultant choose to ensure that leading\nzeros in the purchase order number are preserved?",
+    "options": {
+      "A": "Text",
+      "B": "Number",
+      "C": "Decimal",
+      "D": "Serial"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 91,
+    "question": "Which statement about Data Cloud's Web and Mobile Application Connector is true?",
+    "options": {
+      "A": "A standard schema containing event, profile, and transaction data is created at the time the connector is configured.",
+      "B": "The Tenant Specific Endpoint is auto-generated in Data Cloud when setting the connector.",
+      "C": "Any data streams associated with the connector will be automatically deleted upon deleting the app from Data Cloud Setup.",
+      "D": "The connector schema can be updated to delete an existing field."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 92,
+    "question": "A consultant needs to package Data Cloud components from one\norganization to another.\nWhich two Data Cloud components should the consultant include in a\ndata kit to achieve this goal?\nChoose 2 answers",
+    "options": {
+      "A": "Data model objects",
+      "B": "Segments",
+      "C": "Calculated insights",
+      "D": "Identity resolution rulesets"
+    },
+    "correct_answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 93,
+    "question": "A customer has a calculated insight about lifetime value.\nWhat does the consultant need to be aware of if the calculated insight.\nneeds to be modified?",
+    "options": {
+      "A": "New dimensions can be added.",
+      "B": "Existing dimensions can be removed.",
+      "C": "Existing measures can be removed.",
+      "D": "New measures can be added."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 94,
+    "question": "A user has built a segment in Data Cloud and is in the process of creating an activation. When\nselecting related attributes, they cannot find a specific set of attributes they know to be related to\nthe\nindividual.\nWhich statement explains why these attributes are not available?",
+    "options": {
+      "A": "The segment is not segmenting on profile data.",
+      "B": "The attributes are being used in another activation.",
+      "C": "The desired attributes reside on different related paths.",
+      "D": "Activations can only include 1-to-1 attributes."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 95,
+    "question": "A consultant wants to build a new audience in Data Cloud.\nWhich three criteria can the consultant include when building a segment?\nChoose 3 answers",
+    "options": {
+      "A": "Direct attributes",
+      "B": "Data stream attributes",
+      "C": "Calculated Insights",
+      "D": "Related attributes E. Streaming insights"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 96,
+    "question": "A consultant is planning the ingestion of a data stream that has profile information including a\nmobile phone number.\nTo ensure that the phone number can be used for future SMS campaigns, they need to confirm the\nphone number field is in the\nproper E164 Phone Number format. However, the phone numbers in the file appear to be in varying\nformats.\nWhat is the most efficient way to guarantee that the various phone number formats are\nstandardized?",
+    "options": {
+      "A": "Create a formula field to standardize the format.",
+      "B": "Edit and update the data in the source system prior to sending to Data Cloud.",
+      "C": "Assign the PhoneNumber field type when creating the data stream.",
+      "D": "Create a calculated insight after ingestion."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 97,
+    "question": "A user Is not seeing suggested values from newly-modeled data when building a segment.\nWhat is causing this issue?",
+    "options": {
+      "A": "Value suggestion will only return results for the first 50 values of a specific attribute,",
+      "B": "Value suggestion can only work on direct attributes and not related attributes.",
+      "C": "Value suggestion requires Data Aware Specialist permissions at a minimum.",
+      "D": "Value suggestion is still processing and takes up to 24 hours to be available."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 98,
+    "question": "A customer has outlined requirements to trigger a journey for an abandoned browse behavior. Based\non the requirements, the consultant determines they will use streaming insights to trigger a data\naction to Journey Builder every hour.\nHow should the consultant configure the solution to ensure the data action is triggered at the\ncadence required?",
+    "options": {
+      "A": "Set the activation schedule to hourly.",
+      "B": "Configure the data to be ingested in hourly batches.",
+      "C": "Set the journey entry schedule to run every hour.",
+      "D": "Set the insights aggregation time window to 1 hour."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 99,
+    "question": "A consultant is helping a beauty company ingest its profile data into Data Cloud. The company’s\nsource data includes several fields, such as eye color, skin type, and hair color, that are not fields in\nthe standard Individual data model object (DMO).\nWhat should the consultant recommend to map this data to be used for both segmentation and\nidentity resolution?",
+    "options": {
+      "A": "Create a custom DMO from scratch that has all fields that are needed.",
+      "B": "Create a custom DMO with only the additional fields and map it to the standard Individual DMO.",
+      "C": "Create custom fields on the standard Individual DMO.",
+      "D": "Duplicate the standard Individual DMO and add the additional fields."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 100,
+    "question": "The recruiting team at Cumulus Financial wants to identify which candidates have browsed the jobs\npage on its website at least twice within the last 24 hours. They want the information about these\ncandidates to be available for segmentation in Data Cloud and the candidates added to their\nrecruiting system.\nWhich feature should a consultant recommend to achieve this goal?",
+    "options": {
+      "A": "Streaming data transform",
+      "B": "Streaming insight",
+      "C": "Calculated insight",
+      "D": "Batch bata transform"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 101,
+    "question": "A customer has multiple team members who create segment audiences that work in different time\nzones. One team member works at the home office in the Pacific time zone, that matches the org\nTime Zone setting. Another team member works remotely in the Eastern time zone.\nWhich user will see their home time zone in the segment and activation schedule areas?",
+    "options": {
+      "A": "The team member in the Pacific time zone.",
+      "B": "The team member in the Eastern time zone.",
+      "C": "Neither team member; Data Cloud shows all schedules in GMT.",
+      "D": "Both team members; Data Cloud adjusts the segment and activation schedules to the time zone of the logged-in user"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 102,
+    "question": "Cumulus Financial wants its service agents to view a display of all cases associated with a Unified\nIndividual on a contact record.\nWhich two features should a consultant consider for this use case?\nChoose 2 answers",
+    "options": {
+      "A": "Data Action",
+      "B": "Profile API",
+      "C": "Lightning Web Components",
+      "D": "Query APL"
+    },
+    "correct_answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 103,
+    "question": "A Data Cloud Consultant Is in the process of setting up data streams for a new service-based data\nsource.\nWhen ingesting Case data, which field is recommended to be associated with the Event Time field?",
+    "options": {
+      "A": "Last Modified Date",
+      "B": "Resolution Date",
+      "C": "Escalation Date",
+      "D": "Creation Date"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 104,
+    "question": "Northern Trail Outfitters uses B2C Commerce and is exploring implementing Data Cloud to get a\nunified view of its customers and all their order transactions.\nWhat should the consultant keep in mind with regard to historical data ingesting order data using the\nB2C Commerce Order Bundle?",
+    "options": {
+      "A": "The B2C Commerce Order Bundle ingests 12 months of historical data.",
+      "B": "The B2C Commerce Order Bundle ingests 6 months of historical data.",
+      "C": "The B2C Commerce Order Bundle does not ingest any historical data and only ingests new orders from that point on.",
+      "D": "The B2C Commerce Order Bundle ingests 30 days of historical data."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 105,
+    "question": "How should a Data Cloud consultant successfully apply consent during segmentation?",
+    "options": {
+      "A": "Include the Consent Status from the golden record during activation for any applicable channels of engagement.",
+      "B": "Include Party Identification for any applicable channels of engagement in the filter criteria for each segment.",
+      "C": "Include the Unified Profile during segmentation for any applicable channels of engagement.",
+      "D": "Include the Consent Status for any applicable channels of engagement in the filter criteria for each segment."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 106,
+    "question": "What are the two minimum requirements needed when using the Visual Insights Builder to create a\ncalculated insight?\nChoose 2 answers",
+    "options": {
+      "A": "At least one measure",
+      "B": "At least one dimension",
+      "C": "At least two objects to Join",
+      "D": "A WHERE clause"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 107,
+    "question": "How does Data Cloud ensure high availability and fault tolerance for customer data?",
+    "options": {
+      "A": "By distributing data across multiple regions and data centers",
+      "B": "By using a data center with robust backups",
+      "C": "By Implementing automatic data recovery procedures",
+      "D": "By limiting data access to essential personnel"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 108,
+    "question": "If a data source does not have a field that can be designated as a primary key, what should the\nconsultant do?",
+    "options": {
+      "A": "Use the default primary key recommended by Data Cloud.",
+      "B": "Create a composite key by combining two or more source fields through a formula field.",
+      "C": "Select a field as a primary key and then add a key qualifier.",
+      "D": "Remove duplicates from the data source and then select a primary key."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 109,
+    "question": "A Data Cloud consultant is working with data that is clean and organized. However, the various\nschemas refer to a person by multiple names — such as user; contact, and subscriber — and need a standard mapping.\nWhich term describes the process of mapping these different schema points into a standard data\nmodel?",
+    "options": {
+      "A": "Segment",
+      "B": "Harmonize",
+      "C": "Unify",
+      "D": "Transform"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 110,
+    "question": "A company wants to test its marketing campaigns with different target populations.\nWhat should the consultant adjust in the Segment Canvas interface to get different populations?",
+    "options": {
+      "A": "Direct attributes, related attributes, and population filters",
+      "B": "Segmentation filters, direct attributions, and data sources",
+      "C": "Direct attributes and related attributes",
+      "D": "Population filters and direct attributes"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 111,
+    "question": "A consultant notices that the unified individual profile is not storing the latest email address.\nWhich action should the consultant take to troubleshoot this issue?",
+    "options": {
+      "A": "Remove any old email addresses from Salesforce CRM.",
+      "B": "Check if the mapping of DLO objects is correct to Contact Point Email.",
+      "C": "Confirm that the reconciliation rules are correctly used.",
+      "D": "Verify and update the email address in the source systems if needed."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 112,
+    "question": "A consultant needs to publish segment data to the Audience DMO that can be retrieved using the\nQuery APIs.\nWhen creating the activation target, which type of target should the consultant select?",
+    "options": {
+      "A": "Data Cloud",
+      "B": "External Activation Target",
+      "C": "Marketing Cloud Personalization",
+      "D": "Marketing Cloud"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 113,
+    "question": "What is the primary purpose of Data Cloud?",
+    "options": {
+      "A": "Providing a golden record of a customer",
+      "B": "Managing sales cycles and opportunities",
+      "C": "Analyzing marketing data results",
+      "D": "Integrating and unifying customer data"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 114,
+    "question": "A consultant is ingesting a list of employees from their human resources database that they want to\nsegment on.\nWhich data stream category should the consultant choose when ingesting this data?",
+    "options": {
+      "A": "Profile Data",
+      "B": "Contact Data",
+      "C": "Other Data",
+      "D": "Engagement Data"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 115,
+    "question": "The leadership team at Cumulus Financial has determined that customers who deposited more than\n$250,000 in the last five years and are not using advisory services will be the central focus for all new\ncampaigns in the next year.\nWhich features support this use case?",
+    "options": {
+      "A": "Calculated insight and data action",
+      "B": "Calculated insight and segment",
+      "C": "Streaming insight and segment",
+      "D": "Streaming insight and data action"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 116,
+    "question": "Which two dependencies need to be removed prior to disconnecting a data source?\nChoose 2 answers",
+    "options": {
+      "A": "Activation target",
+      "B": "Segment",
+      "C": "Activation",
+      "D": "Data stream"
+    },
+    "correct_answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 117,
+    "question": "How does Data Cloud ensure data privacy and security?",
+    "options": {
+      "A": "By encrypting data at rest and in transit",
+      "B": "By enforcing and controlling consent references",
+      "C": "By securely storing data in an offsite server",
+      "D": "BY limiting data access to authorized admins"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 118,
+    "question": "Which tool allows users to visualize and analyze unified customer data in Data Cloud?",
+    "options": {
+      "A": "Salesforce CLI",
+      "B": "Heroku",
+      "C": "Tableau",
+      "D": "Einstein Analytics"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 119,
+    "question": "Cumulus Financial needs to create a composite key on an incoming data source that combines the\nfields Customer Region and Customer Identifier.\nWhich formula function should a consultant use to create a composite key when a primary key is not available in a data stream?",
+    "options": {
+      "A": "CONCAT",
+      "B": "COMBIN",
+      "C": "COALE",
+      "D": "CAST"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 120,
+    "question": "A customer has two Data Cloud orgs. A new configuration has been completed and tested for an\nAmazon S3 data stream and its mappings in one of the Data Cloud orgs.\nWhat is recommended to package and promote this configuration to the customer's second org?",
+    "options": {
+      "A": "Use the Metadata API.",
+      "B": "Use the Salesforce CRM connector.",
+      "C": "Create a data kit.",
+      "D": "Package as an AppExchange application."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 121,
+    "question": "Northern Trail Outfitters (NTO) is getting ready to start ingesting its CRM data into Data Cloud.\nWhile setting up the connector, which type of refresh should NTO expect when the data stream is\ndeployed for the first time?",
+    "options": {
+      "A": "Incremental",
+      "B": "Manual refresh",
+      "C": "Partial refresh",
+      "D": "Full refresh"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 122,
+    "question": "Northern Trail Outfitters (NTO) asks its Data Cloud consultant for a list of contacts who fit within a\ncertain segment for a mailing campaign.\nHow should the consultant provide this list to NTO?",
+    "options": {
+      "A": "Create the segment and then click Download to obtain the segment membership details to provide to NTO.",
+      "B": "Create a new file storage activation target, create the segment, and then activate the segment to the new activation target.",
+      "C": "Create the segment, select Email as the activation target, and activate the segment di nearly to NTO.",
+      "D": "Create the segment and then activate the segment to NTO's Salesforce CRM."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 123,
+    "question": "Which functionality does Data Cloud offer to improve customer support interactions when a\ncustomer is working with an agent?",
+    "options": {
+      "A": "Predictive troubleshooting",
+      "B": "Enhanced reporting tools",
+      "C": "Real-time data integration",
+      "D": "Automated customer service replies"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 124,
+    "question": "A company is seeking advice from a consultant on how to address the challenge of having multiple\nleads and contacts in Salesforce that share the same email address. The consultant wants to provide\na detailed and comprehensive explanation on how Data Cloud can be leveraged to effectively solve\nthis issue.\nWhat should the consultant highlight to address this company's business challenge?",
+    "options": {
+      "A": "Data Bundles",
+      "B": "Calculated Insights",
+      "C": "Identity Resolution",
+      "D": "Identity Resolution"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 125,
+    "question": "A Data Cloud consultant tries to save a new 1-to-l relationship between the Account DMO and\nContact Point Address DMO but gets an error.\nWhat should the consultant do to fix this error?",
+    "options": {
+      "A": "Map additional fields to the Contact Point Address DMO.",
+      "B": "Make sure that the total account records are high enough for Identity resolution.",
+      "C": "Change the cardinality to many-to-one to accommodate multiple contacts per account.",
+      "D": "Map Account to Contact Point Email and Contact Point Phone also."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 126,
+    "question": "A customer notices that their consolidation rate is low across their account unification. They have\nmapped Account to the Individual and Contact Point Email DMOs.\nWhat should they do to increase their consolidation rate?",
+    "options": {
+      "A": "Change reconciliation rules to Most Occurring.",
+      "B": "Disable the individual identity ruleset.",
+      "C": "Increase the number of matching rules.",
+      "D": "Update their account address details in the data source"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 127,
+    "question": "Northern Trail Outfitters asks its consultant to extract the runner profiles and activity logs from its\nTrack My Run mobile app and load them into Data Cloud. The marketing department also indicates\nthat they need the last 90 days of historical data and want all new and updated data as it becomes\navailable on a go-forward basis.\nAs best practice, which sequence of actions should the consultant use to implement this request?",
+    "options": {
+      "A": "Use bulk ingestion to first load the last 90 days of data, and also subsequently use bulk ingestion to synchronize the future data as It becomes available.",
+      "B": "Use streaming ingestion to first load the last 90 days of data, and also subsequently use streaming ingestion synchronize future data as It becomes available.",
+      "C": "Use streaming ingestion to first load the last 90 days of data, and then use bulk Ingestion to synchronize future data as It becomes available.",
+      "D": "Use bulk ingestion to first load the last 90 days of data, and then use streaming ingestion to synchronize future data as It becomes available."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 128,
+    "question": "A consultant needs to minimize the difference between a Data Cloud segment population and\nMarketing Cloud data extension count to determine the true size of segments for campaign planning.\nWhat should the consultant recommend to filter the segments by to accomplish this?",
+    "options": {
+      "A": "User preferences for marketing outreach",
+      "B": "Geographical divisions",
+      "C": "Marketing Cloud Journeys",
+      "D": "Business units"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 129,
+    "question": "A consultant at Northern Trail Outfitters is attempting to ingest a field from the Contact object in\nSalesforce CRM that contains both yyyy-mm-dd and yyyy-mm-dd hh:mm:ss values. The target field is\nset to Date datatype.\nWhich statement is true in this situation?",
+    "options": {
+      "A": "The target field will throw an error and store null values.",
+      "B": "The target field will be able to hold both types of values.",
+      "C": "The target field will only hold the time part and ignore the date part.",
+      "D": "The target field will only hold the date part and ignore the time part."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 130,
+    "question": "A consultant wants to make sure address details from customer orders are selected as best to save to\nthe unified profile.\nWhat should the consultant do to achieve this?",
+    "options": {
+      "A": "Select the address details on the Contact Point Address. Change the reconciliation rules for the specific address attributes to Source Priority and move the Individual DMO to the bottom.",
+      "B": "Use the default reconciliation rules for Contact Point Address.",
+      "C": "Select the address details on the Contact Point Address. Change the reconciliation rules for the specific address attributes to Source Priority and move the Oder DMO to the top.",
+      "D": "Change the default reconciliation rules for Individual to Source Priority."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 131,
+    "question": "What is the role of artificial intelligence (AI) in Data Cloud?",
+    "options": {
+      "A": "Automating data validation",
+      "B": "Creating dynamic data-driven management dashboards",
+      "C": "Enhancing customer interactions through insights and predictions",
+      "D": "Generating email templates for use cases"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 132,
+    "question": "A consultant is connecting sales order data to Data Cloud and considers whether to use the Profile,\nEngagement, or Other categories to map the DLO. The consultant chooses to map the DLO called\nOrder-Headers to the Sales Order DMO using the Engagement category.\nWhat is the impact of this action on future mappings?",
+    "options": {
+      "A": "A DLO with category Engagement can be mapped to any DMO using either Profile. Engagement, or Other categories.",
+      "B": "When mapping a Profile DLO to the Sales Order DMO, the category gets updated to Profile.",
+      "C": "Sales Order DMO gets assigned to both the Profile and Engagement categories when mapping a Profile DLO.",
+      "D": "Only Engagement category DLOs can be mapped to the Sales Order DMO. Sales Order gets assigned to the Engagement Category."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 133,
+    "question": "Cloud Kicks plans to do a full deletion of one of its existing data streams and its underlying data lake\nobject (DLO).\nWhat should the consultant consider before deleting the data stream?",
+    "options": {
+      "A": "The underlying DLO can be used in a data transform.",
+      "B": "The underlying DLO cannot be mapped to a data model object.",
+      "C": "The data stream must be associated with a data kit.",
+      "D": "The data stream can be deleted without implicitly deleting the underlying DLO."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 134,
+    "question": "A company stores customer data in Marketing Cloud and uses the Marketing Cloud Connector to\ningest data into Data Cloud.\nWhere does a request for data deletion or right to be forgotten get submitted?",
+    "options": {
+      "A": "In Data Cloud settings",
+      "B": "On the individual data profile in Data Cloud",
+      "C": "In Marketing Cloud settings",
+      "D": "through Consent API"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 135,
+    "question": "A Data Cloud consultant is evaluating the initial phase of the Data Cloud lifecycle for a company.\nWhich action is essential to effectively begin the Data Cloud lifecycle?",
+    "options": {
+      "A": "Identify use cases and the required data sources and data quality.",
+      "B": "Analyze and partition the data into data spaces.",
+      "C": "Migrate the existing data into the Customer 360 Data Model.",
+      "D": "Use calculated insights determine the benefits of Data Cloud for this company."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 136,
+    "question": "A consultant is troubleshooting a segment error.\nWhich error message is solved by using calculated insights Instead of nested segments?",
+    "options": {
+      "A": "Segment is too complex.",
+      "B": "Multiple population counts are in progress.",
+      "C": "Segment population count failed.",
+      "D": "Segment can't be published."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 137,
+    "question": "Cumulus Financial offers both business and personal loans. Records in the Contact DLO can be useful\nfor both groups since individual customers may have both business and personal loans. However, for\nlegal reasons, the two groups must be kept separate.\nHow should Cumulus Financial solve this business requirement?",
+    "options": {
+      "A": "Duplicate the Individual DM0.",
+      "B": "Duplicate the Contact DLO.",
+      "C": "Create two identity resolution rules in the same data space.",
+      "D": "Use two data spaces."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 138,
+    "question": "A company wants to include certain personalized fields in an email by including related attributes\nduring the activation in Data Cloud. It notices that some values, such as purchased product names,\ndo not have consistent casing in Marketing Cloud Engagement. For example, purchased product\nnames appear as follows: Jacket, jacket, shoes, SHOES. The company wants to normalize all names to\nproper case and replace any null values with a default value.\nHow should a consultant fulfill this requirement within Data Cloud?",
+    "options": {
+      "A": "Create a streaming insight with a data action.",
+      "B": "Use formula fields when ingesting at the data stream level.",
+      "C": "Create one batch data transform per data stream.",
+      "D": "Create one batch data transform that creates a new DLO."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 139,
+    "question": "Cumulus Financial wants to create a segment of individuals based on transaction history dat\na. This data has been mapped in the data model and is accessible via multiple container paths for\nsegmentation.\nWhat happens if the optimal container path for this use case is not selected?",
+    "options": {
+      "A": "Alternate container paths will be suggested before the segment is published.",
+      "B": "The resulting segment may be smaller or larger than expected.",
+      "C": "Data Cloud segmentation will automatically select the optimal container path.",
+      "D": "The resulting segment will not be generated."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 140,
+    "question": "A finance company that uses Data Cloud wants to simplify how its users can view all the various\nchannels a customer engages with Which feature should the consultant recommend to meet this\nrequirement?",
+    "options": {
+      "A": "Use Data Cloud to connect with analytic tools, like Tableau.",
+      "B": "Use calculated insights to determine when and how to engage with various customers.",
+      "C": "Create segments based on the ingested data and insights to activate in Marketing Cloud.",
+      "D": "Use Data Cloud to ingest data from various available data sources."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 141,
+    "question": "A consultant needs to update a field in CRM as soon as a record gets updated in the DMO.\nWhich feature should the consultant use?",
+    "options": {
+      "A": "Data share target",
+      "B": "Data actions",
+      "C": "Rapid segments",
+      "D": "Streaming data transform"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 142,
+    "question": "The Data Cloud admin at Northern Trail Outfitters (NTO) wants to be proactively and immediately\ninformed via Slack and email if any of the data streams fail for any reason. If this happens, a case\nshould also be triggered as part of NTO's existing support and triage process, and reflected in its\nglobal monitoring dashboard.\nWhat should a consultant recommend for these requirements?",
+    "options": {
+      "A": "Data actions",
+      "B": "Data Cloud Query Editor",
+      "C": "Salesforce flows",
+      "D": "Salesforce reports and dashboards"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 143,
+    "question": "Northern Trail Outfitters has the following customer data to ingest into Data Cloud and use for\nsegmentation.\n1. Propensity to purchase\n2. Has active membership\n3. Work email address\nWhich data types should the consultant use when ingesting this data?",
+    "options": {
+      "A": "Number, Text, URL",
+      "B": "Percent, Boolean, Email",
+      "C": "Number, Boolean, Text",
+      "D": "Percent, Number, Email"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 144,
+    "question": "A bank collects customer data for its loan applicants and high net worth customers. A customer can\nbe both a load applicant and a high net worth customer, resulting in duplicate data.\nHow should a consultant ingest and map this data in Data Cloud?",
+    "options": {
+      "A": "Use a data transform to consolidate the data into one DLO and them map it to the individual and Contact Point Email DMOs.",
+      "B": "Ingest the data into two DLOs and map each to the individual and Contact point Email DMOs.",
+      "C": "Ingest the data into two DLOs and then map to two custom DMOs.",
+      "D": "Ingest the data into one DLO and then map to one custom DMO."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 145,
+    "question": "A user needs permissions to access Data Cloud to create, manage, and activate segments, However,\nthe user should not be allowed to created reports or manage data sources.\nWhich permission set should the consultant assign?",
+    "options": {
+      "A": "Data Cloud Marketing Specialist",
+      "B": "Data Cloud Marketing Manager",
+      "C": "Data Cloud Data Aware Specialist",
+      "D": "Data Cloud user"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 146,
+    "question": "Cumulus Financial (CF) wants to target loyal and engaged customers. When a platinum tier customer\nvisits their Investment pages more than three times in a 24-hour period, CF wants to Immediately\nSend an email that offers a private consultation.\nWhat should a consultant recommend for this business requirement?",
+    "options": {
+      "A": "Calculated insight with a data action to a Marketing Cloud Engagement transactional email",
+      "B": "Rapid segment to a data action journey in Marketing Cloud Engagement",
+      "C": "Standard segment with activation into Marketing Cloud Engagement",
+      "D": "Streaming insight with a data action into a journey in Marketing Cloud Engagement"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 147,
+    "question": "A global fashion retailer operates online sales platforms across AMFR, FMFA, and APAC. the data\nformats for customer, order, and product Information vary by region, and compliance regulations\nrequire data to remain unchanged in the original data sources They also require a unified view of\ncustomer profiles for real-time personalization and analytics.\nGiven these requirement, which transformation approach should the company implement to\nstandardise and cleanse incoming data streams?",
+    "options": {
+      "C": "Transform data before ingesting into Data Cloud.",
+      "A": "Implement streaming data transformations.",
+      "B": "Implement batch data transformations.",
+      "D": "Use Apex to transform and cleanse data."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 148,
+    "question": "What is a reason to create a formula when ingesting a data stream?",
+    "options": {
+      "A": "To concatenate files so they are ingested in the correct sequence",
+      "B": "To add a unique external identifier to an existing ruleset",
+      "C": "To transform is date time field into a dale field for use in data mapping",
+      "D": "To remove duplicate rows of data from the data stream"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 149,
+    "question": "Which data stream category type should be assigned in order to use the dataset for date and timebased operations in segmentation and calculated insights?",
+    "options": {
+      "A": "Individual",
+      "B": "Engagement",
+      "C": "Sales Order",
+      "D": "Profile"
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 150,
+    "question": "What is a key functionality of Data Cloud?",
+    "options": {
+      "A": "To create a master data management (MUM) strategy",
+      "B": "To give a persistent ID for unified profiles",
+      "C": "To build insights on unified profiles",
+      "D": "To help users build a heat map using their data"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 151,
+    "question": "Cumulus Financial segregates its sales CRM data based on Region for its Data Cloud users. Multiple data spaces are configured: a default space and two additional spaces tailored for EMEA and APAC\nregions.\nEME A sales reps who need temporary access to visualize data for both regions say that they cannot\nvisualize APAC dat\na. APAC sales reps can visualize the corresponding segmented data.\nWhich statement describes the cause of this issue?",
+    "options": {
+      "A": "The EMEA sales reps have not been assigned to the profile associated with the APAC data space.",
+      "B": "The APAC data space is not associated with any permission set.",
+      "C": "The APAC data space Is not associated with any profile.",
+      "D": "The EMEA sales reps have not been assigned to the permission set associated with the APAC data space."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 152,
+    "question": "A consultant is setting up Data Cloud for a multi-brand organization and is using data spaces to\nsegregate its data for various brands.\nWhile starting the mapping of a data stream, the consultant notices that they cannot map the object\nfor one of the brands.\nWhat should the consultant do to make the object available for a new data space?",
+    "options": {
+      "A": "Create a new data stream and map the second data stream to the data space.",
+      "B": "Copy data from the default data space to a new DMO using the Data Copy feature and link this DMO to the new data space.",
+      "C": "Create a batch transform to split data between different data spaces.",
+      "D": "Navigate to the Data Space tab and select the object to be included in the new data space."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 153,
+    "question": "Cumulus Financial is experiencing delays in publishing multiple segments simultaneously. The\ncompany wants to avoid reducing the\nfrequency at which segments are published, while retaining the same segments in place today.\nWhich action should a consultant take to alleviate this issue?",
+    "options": {
+      "A": "Enable rapid segment publishing to all to segment to reduce generation time.",
+      "B": "Reduce the number of segments being published.",
+      "C": "Increase the Data Cloud segmentation concurrency limit.",
+      "D": "Adjust the publish schedule start time of each segment to prevent overlapping processes."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 154,
+    "question": "A consultant at Northern Trail Outfitters is implementing Data Cloud and creating an activation target\nfor their segment.\nFor activation membership, which object should the consultant choose?",
+    "options": {
+      "A": "Data Model Object",
+      "B": "Data Activation Object",
+      "C": "Data Segmentation Object",
+      "D": "Data Lake Object"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 155,
+    "question": "A customer creates a large segment of customers that placed orders in the last 30 days, and adds\nrelated attributes from the… to the activation. Upon checking the activation in Marketing Cloud, they\nnotice It contains orders that are older than 30 days.\nWhat should a consultant do to resolve this issue?",
+    "options": {
+      "A": "use data graphs that contain only 30 days of data.",
+      "B": "Apply a data space fitter to exclude orders older than 30 days.",
+      "C": "Apply a filter to Purchase Order Date to exclude orders older than 30 days.",
+      "D": "Use SQL in Marketing Cloud Engagement to remove orders older than 30 days."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 156,
+    "question": "A consultant wants to confirm the Identity resolution they Just set up. Which two features can the\nconsultant use to validate the data on a unified profile?\nChoose 2 answers",
+    "options": {
+      "A": "Identity Resolution",
+      "B": "Data Actions",
+      "C": "Data Explorer",
+      "D": "Query API"
+    },
+    "correct_answers": [
+      "CD"
+    ]
+  },
+  {
+    "id": 157,
+    "question": "A marketing manager at Northern Trail Outfitters wants to Improve marketing return on investment\n(ROI) by tapping into Insights from Data Cloud Segment Intelligence.\nWhich permission set does a user need to set this up?",
+    "options": {
+      "A": "Data Cloud Data Aware Specialist",
+      "B": "Data Cloud User",
+      "C": "Cloud Marketing Manager",
+      "D": "Data Cloud Admin"
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 158,
+    "question": "The marketing manager at Cloud Kicks plans to bring in corporate phone numbers for its accounts\ninto Data Cloud. They plan to use a custom field with data set to Phone to store these phone\nnumbers.\nWhich statement is true when ingesting phone numbers?",
+    "options": {
+      "A": "Text value can be accepted for ingestion into = phone data type field.",
+      "B": "Data Cloud validates the format of the phone number at the time of Ingestion.",
+      "C": "The phone number field car only accept 10-digit values.",
+      "D": "The phone number field should be used as a primary key."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 159,
+    "question": "What is a typical use case for Salesforce Data Cloud?",
+    "options": {
+      "A": "Data synchronization across the Salesforce ecosystem",
+      "B": "Storing CRM data on promises",
+      "C": "Data harmonization across multiple platforms",
+      "D": "Sending personalized emails at scale"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 160,
+    "question": "A consultant needs to create a data graph based on several DLOs,\nWhich step should the consultant take to make this work?",
+    "options": {
+      "A": "Use a data action to update the data graph with the DLO data",
+      "B": "Map the DLOS to DMOS and use these in the data graph.",
+      "C": "Map the DLOs directly to a data graph.",
+      "D": "Batch transform the DLOs to multiple DMOs and activate these with the data graph."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 161,
+    "question": "Northern Trail Outfitters wants to create a segment with customers that have purchased in the last 24\nhours. The segment data must be as up to date as possible.\nWhat should the consultant Implement when creating the segment?",
+    "options": {
+      "A": "Use streaming insights for near real-time segmentation results.",
+      "B": "Use Einstein segmentation optimization to collect data from the last 24 hours.",
+      "C": "Use rapid segments with a publish interval of 1 hour.",
+      "D": "Use standard segment with a publish interval of 30 minutes."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 162,
+    "question": "An analyst from Cloud Kicks needs to get quick Insights to determine the average sales per day\nduring the past week.\nWhat should a consultant recommend?",
+    "options": {
+      "A": "salesforce flows",
+      "B": "Lightning web component utilizing Query API",
+      "C": "Salesforce reports",
+      "D": "Segment activation to Azure"
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 163,
+    "question": "Northern Trail Outfitters (NTO) owns and operates six unique brands, each with their own set of customers, transactions, and loyalty information. The marketing director wants to ensure that\nsegments and activations from the NTO Outlet brand do not reference customers or transactions\nfrom the other brands.\nWhat is the most efficient approach to handle this requirement?",
+    "options": {
+      "A": "Use Business Unit Aware activation.",
+      "B": "Separate the Outlet brand into a data space.",
+      "C": "Separate the brands into six different data spaces.",
+      "D": "Create a batch data transform to generate a DLO for the Outlet brand."
+    },
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 164,
+    "question": "An automotive dealership wants to implement Data Cloud.\nWhat is a use case for Data Cloud's capabilities?",
+    "options": {
+      "A": "Implement a full archive solution with version management.",
+      "B": "Use browser cookies to track visitor activity on the website and display personalized recommendations.",
+      "C": "Build a source of truth for consent management across all unified individuals.",
+      "D": "Ingest customer interaction across different touch points, harmonize, and build a data model for analytical reporting."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 165,
+    "question": "Northern Trail Outfitters uploads new customer data to an Amazon S3 Bucket on a daily basis to be\ningested in Data Cloud. Based on this, a calculated insight is created that shows the total spend per\ncustomer in the last 30 days.\nIn which sequence should each process be run to ensure that freshly imported data is ready and\navailable to use for any segment?",
+    "options": {
+      "A": "Refresh Data Stream > Identity Resolution > Calculated Insight",
+      "B": "Refresh Data Stream > Calculated Insight > Identity Resolution",
+      "C": "Calculated Insight > Refresh Data Stream > Identity Resolution",
+      "D": "Identity Resolution > Refresh Data Stream > Calculated Insight"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 166,
+    "question": "A rideshare company wants to send an email to customers that provides a year-in-review with five\n\"fun\" trip statistics, such as destination, distance traveled, etc. This raw data arrives into Data Cloud\nand is not aggregated at source.\nThe company creates a segment of customers that had at least one ride in the last 365 days.\nFollowing best practices, which solution should the consultant recommend in Data Cloud to\npersonalize the content of the email?",
+    "options": {
+      "A": "Use a data transform to aggregate the statistics and map them to direct attributes on Individual to include in the activation.",
+      "B": "Create five calculated insights for the activation and add dimension filters.",
+      "C": "Use a data action to send each ride as an event to Marketing Cloud Engagement, then use AMP script to summarize this data in the email.",
+      "D": "Include related attributes in the activation for the last 365 days."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 167,
+    "question": "A financial services firm specializing in wealth management contacts a Data Cloud consultant with an\nidentity resolution request. The company wants to enhance its strategy to better manage individual\nclient profiles within family portfolios.\nFamily members often share addresses and sometimes phone numbers but have distinct investment\npreferences and financial goals. The firm aims to avoid blending individual family profiles into a\nsingle entity to maintain personalized service and accurate financial advice.\nWhich identity resolution strategy should the consultant put in place?",
+    "options": {
+      "A": "Configure a single match rule with a single connected contact point based on address.",
+      "B": "Use multiple contact points without individual attributes in the match rules.",
+      "C": "Use a more restrictive design approach to ensure the match rules perform as desired.",
+      "D": "Configure a single match rule based on a custom identifier."
+    },
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 168,
+    "question": "A consultant is preparing to implement Data Cloud.\nWhich ethic should the consultant adhere to regarding customer data?",
+    "options": {
+      "A": "Allow senior leaders in the firm to access customer data for audit purposes.",
+      "B": "Collect and use all of the data to create more personalized experiences.",
+      "C": "Map sensitive data to the same DMO for ease of deletion.",
+      "D": "Carefully consider asking for sensitive data such as age, gender, or ethnicity."
+    },
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 169,
+    "question": "When trying to disconnect a data source an error will be generated if it has which two dependencies\nassociated with it?\nChoose 2 answers",
+    "options": {
+      "A": "Activation",
+      "B": "Data stream",
+      "C": "Segment",
+      "D": "Activation target"
+    },
+    "correct_answers": [
+      "BC"
+    ]
+  },
+  {
+    "id": 170,
+    "question": "Which statement is true related to batch ingestions from Salesforce CRM?",
+    "options": {
+      "A": "When a column is added or removed, the CRM connector performs a full refresh.",
+      "B": "The CRM connector performs an incremental refresh when 600K or more deletion records are detected.",
+      "C": "The CRM connector's synchronization times can be customized to up to 15-minute intervals.",
+      "D": "CRM data cannot be manually refreshed and must wait for the next scheduled synchronization."
+    },
+    "correct_answers": [
+      "A"
+    ]
+  }
+]

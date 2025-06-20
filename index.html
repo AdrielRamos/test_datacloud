@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulado Data Cloud</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: 40px auto; background: white; padding: 20px 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; }
+    .options label { display: block; margin-bottom: 10px; cursor: pointer; }
+    .navigation { display: flex; justify-content: space-between; margin-top: 20px; }
+    .status { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 20px; }
+    .dot { width: 20px; height: 20px; border-radius: 50%; background: lightgray; display: flex; justify-content: center; align-items: center; font-size: 12px; cursor: pointer; }
+    .dot.correct { background: #4CAF50; color: white; }
+    .dot.incorrect { background: #F44336; color: white; }
+    .dot.current { border: 2px solid #2196F3; }
+    button { padding: 10px 20px; border: none; background: #2196F3; color: white; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #1976D2; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Simulado Data Cloud Consultant</h1>
+  <div id="quiz"></div>
+  <div class="navigation">
+    <button onclick="previousQuestion()">Anterior</button>
+    <button onclick="checkAnswer()">Confirmar Resposta</button>
+    <button onclick="nextQuestion()">Próxima</button>
+  </div>
+  <div class="status" id="status"></div>
+</div>
+
+<script>
+  let currentQuestion = 0;
+  let questions = [];
+  let results = [];
+
+  fetch('questoes_datacloud.json')
+    .then(res => res.json())
+    .then(data => {
+      questions = data;
+      results = Array(questions.length).fill(null);
+      renderQuestion();
+      renderStatus();
+    });
+
+  function renderQuestion() {
+    const q = questions[currentQuestion];
+    const container = document.getElementById('quiz');
+    container.innerHTML = `
+      <div class="question">
+        <h3>Questão ${q.id}</h3>
+        <p>${q.question}</p>
+        <div class="options">
+          ${Object.entries(q.options).map(([key, val]) => `
+            <label><input type="checkbox" name="option" value="${key}"> ${key}) ${val}</label>
+          `).join('')}
+        </div>
+      </div>
+    `;
+    renderStatus();
+  }
+
+  function checkAnswer() {
+    const q = questions[currentQuestion];
+    const selected = Array.from(document.querySelectorAll('input[name="option"]:checked')).map(el => el.value);
+    const correct = q.correct_answers.sort().join(',');
+    const answer = selected.sort().join(',');
+    if (answer === correct) {
+      results[currentQuestion] = 'correct';
+    } else {
+      results[currentQuestion] = 'incorrect';
+    }
+    renderStatus();
+  }
+
+  function nextQuestion() {
+    if (currentQuestion < questions.length - 1) {
+      currentQuestion++;
+      renderQuestion();
+    }
+  }
+
+  function previousQuestion() {
+    if (currentQuestion > 0) {
+      currentQuestion--;
+      renderQuestion();
+    }
+  }
+
+  function renderStatus() {
+    const status = document.getElementById('status');
+    status.innerHTML = results.map((res, idx) => `
+      <div class="dot ${res || ''} ${idx === currentQuestion ? 'current' : ''}" onclick="goTo(${idx})">${idx + 1}</div>
+    `).join('');
+  }
+
+  function goTo(idx) {
+    currentQuestion = idx;
+    renderQuestion();
+  }
+</script>
+</body>
+</html>
