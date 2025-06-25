@@ -526,7 +526,9 @@
       "C": "Set preferred attribute names when configuring activation.",
       "D": "Update field names in the data model object."
     },
-    "correct_answers": []
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 41,
