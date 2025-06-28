@@ -2051,7 +2051,8 @@
       "D": "Query API"
     },
     "correct_answers": [
-      "CD"
+      "C",
+      "D"
     ]
   },
   {
@@ -2220,7 +2221,8 @@
       "D": "Activation target"
     },
     "correct_answers": [
-      "BC"
+      "B",
+      "C"
     ]
   },
   {
