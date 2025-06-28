@@ -1116,7 +1116,8 @@
       "A": "Identity Resolution",
       "B": "Query APL",
       "C": "Data Explorer",
-      "D": "Profile Explorer E. Data Actions"
+      "D": "Profile Explorer", 
+      "E": "Data Actions"
     },
     "correct_answers": [
       "A",
