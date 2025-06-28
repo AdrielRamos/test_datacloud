@@ -1250,7 +1250,8 @@
       "A": "Direct attributes",
       "B": "Data stream attributes",
       "C": "Calculated Insights",
-      "D": "Related attributes E. Streaming insights"
+      "D": "Related attributes", 
+      "E": "Streaming insights"
     },
     "correct_answers": [
       "A",
